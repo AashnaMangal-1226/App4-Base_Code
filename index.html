@@ -38,18 +38,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 // copy and pasted java script code from previous assignment
-	 var allergy_count = 0;
-        var cold_count = 0;
+	 var broken_count = 0;
+        var sprain_count = 0;
 
-	<!-- function to total the answers that indicate allergy -->
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-		alert(allergy_count);
+	<!-- function to total the answers that indicate it's broken -->
+        function brokenAdd(){
+            broken_count = broken_count + 1;
+		alert(broken_count);
 
         }
-	<!-- function to total the answers that indicate cold -->
-        function coldAdd(){
-            cold_count = cold_count + 1;
+	<!-- function to total the answers that indicate it's sprained -->
+        function sprainAdd(){
+            sprain_count = sprain_count + 1;
         }
 	
 	<!-- function to compute the final percentages -->
@@ -57,10 +57,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!-- given line of code in instructions to display on correct page -->
 		var resultText = document.getElementById("results");
 	<!-- calculations to change the number into a percent -->
-		var allergyPercent = (allergy_count / 4) * 100;
-		var coldPercent = (cold_count / 4) * 100;
+		var brokenPercent = (broken_count / 4) * 100;
+		var sprainPercent = (sprain_count / 4) * 100;
 	<!-- given line of code in indstructions to display probability -->
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
+		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "<br> Probability it is a sprain =" + sprainPercent; 
 		
 	}
 
@@ -95,11 +95,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <!-- Copy and pasted html code from previous assignment  -->
 	<div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Broken or sprained finger??</h1>
 </div>
 	<!-- introduction/welcome page -->
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
+	<p>Are you feeling like you might have broken your finger but wonder if it's just a sprain. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
@@ -114,11 +114,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 <!-- code to display the question -->
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?.</p>    
+        <p>Is your finger turning blue or purple?.</p>    
     	</div>
 <!--code for yes and no buttons in html and javascript-->
-	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
-	<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
+	<a href="#two" onclick="brokenAdd();" class="w3-btn w3-black"> Yes </a>
+	<a href="#two" onclick="sprainAdd();" class="w3-btn w3-black"> No </a>
 </div>
 <!-- PAGE 2 -->
 <div class="page" id="two">
@@ -127,11 +127,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 <!-- code to display the question -->
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?.</p>
+		<p>Is your finger swelling to at least twice its normal size?.</p>
 	</div>
 <!--code for yes and no buttons in html and javascript-->
-	<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
-	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
+	<a href="#three" onclick="brokenAdd();" class="w3-btn w3-black"> Yes </a>
+	<a href="#three" onclick="sprainAdd();" class="w3-btn w3-black"> No </a>
 </div>
 	
 <!-- PAGE 3 -->
@@ -141,11 +141,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 <!-- code to display the question -->
 	<div id="content" class="w3-container">
-		<p>Do you have a sore throat?.</p>
+		<p>Can you do normal tasks without unbearable pain?.</p>
 	</div>
 <!--code for yes and no buttons in html and javascript-->
-	<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
-	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
+	<a href="#four" onclick="sprainAdd();" class="w3-btn w3-black"> Yes </a>
+	<a href="#four" onclick="brokenAdd();" class="w3-btn w3-black"> No </a>
 </div>	
 
 <!-- PAGE 4 -->
@@ -155,18 +155,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 <!-- code to display the question -->
 	<div id="content" class="w3-container">
-		<p>Are your symptoms seasonal?.</p>
+		<p>Does the shape of your finger look deformed?.</p>
 	</div>
 <!--code for yes and no buttons in html and javascript-->
-	<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
-	<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
+	<a href="#five" onclick="brokenAdd();" class="w3-btn w3-black"> Yes </a>
+	<a href="#five" onclick="sprainAdd();" class="w3-btn w3-black"> No </a>
 </div>	
 	
 <!--results page -->
 	<div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>results</h1>
-<!-- code to pull information from "results" function at the top of the code, indiciating the percent cold and percent allergy -->
+<!-- code to pull information from "results" function at the top of the code, indiciating the percent sprain and percent broken -->
 	</div>
 	
 
