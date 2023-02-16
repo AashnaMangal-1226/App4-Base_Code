@@ -41,25 +41,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	 var broken_count = 0;
         var sprain_count = 0;
 
-	<!-- function to total the answers that indicate it's broken -->
+//function to total the answers that indicate it's broken//
         function brokenAdd(){
             broken_count = broken_count + 1;
 		alert(broken_count);
 
         }
-	<!-- function to total the answers that indicate it's sprained -->
+//function to total the answers that indicate it's sprained//
         function sprainAdd(){
             sprain_count = sprain_count + 1;
         }
 	
-	<!-- function to compute the final percentages -->
+//function to compute the final percentages//
 	function getResults() {
-	<!-- given line of code in instructions to display on correct page -->
+//given line of code in instructions to display on correct page//
 		var resultText = document.getElementById("results");
-	<!-- calculations to change the number into a percent -->
+//calculations to change the number into a percent//
 		var brokenPercent = (broken_count / 4) * 100;
 		var sprainPercent = (sprain_count / 4) * 100;
-	<!-- given line of code in indstructions to display probability -->
+//given line of code in indstructions to display probability//
 		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "<br> Probability it is a sprain =" + sprainPercent; 
 		
 	}
