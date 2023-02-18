@@ -54,22 +54,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 //function to compute the final percentages//
 	function getResults() {
+		
 //given line of code in instructions to display on correct page//
 		var resultText = document.getElementById("results");
+		
 //calculations to change the number into a percent//
 		var brokenPercent = (broken_count / 4) * 100;
 		var sprainPercent = (sprain_count / 4) * 100;
+		
 //given line of code in indstructions to display probability//
 		resultText.innerHTML = "Probability it is broken =" + brokenPercent + "<br> Probability it is a sprain =" + sprainPercent; 
 		
 	}
-// The following code lets you know when the file was last modified.
-// This will help you know if you are looking at the new version of the file or if there is a delay on GitHub.
+// Given code to identify last modification date
        var docMod = document.lastModified;
        alert("This file last modified  " + docMod);
        console.log("This file last modified  " + docMod);
-// If you find the alert box annoying, comment out that line and timestamp will still show up in the debugging console
-
 
 </script>	
 
@@ -113,6 +113,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 	<h1>Broken or sprained finger?</h1>
 </div>
+	
 	<!-- introduction/welcome page -->
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have broken your finger but wonder if it's just a sprain. Answer a few short questions to find out!</p>
@@ -130,23 +131,28 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--image code -->
 		<img src="http://clipart.coolclips.com/480/vectors/tf05098/CoolClips_peop2744.png" alt="Man with broken finger">
 	</div>
+	
 <!-- code to display the question -->
     	<div id="content" class="w3-container">
         <p>Is your finger turning blue or purple?</p>    
     	</div>
+	
 <!--code for yes and no buttons in html and javascript-->
 	<a href="#two" onclick="brokenAdd();" class="w3-btn w3-black"> Yes </a>
 	<a href="#two" onclick="sprainAdd();" class="w3-btn w3-black"> No </a>
 </div>
+	
 <!-- PAGE 2 -->
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
+	
 <!-- code to display the question -->
 	<div id="content" class="w3-container">
 		<p>Is your finger swelling to at least twice its normal size?</p>
 	</div>
+	
 <!--code for yes and no buttons in html and javascript-->
 	<a href="#three" onclick="brokenAdd();" class="w3-btn w3-black"> Yes </a>
 	<a href="#three" onclick="sprainAdd();" class="w3-btn w3-black"> No </a>
@@ -157,10 +163,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
+	
 <!-- code to display the question -->
 	<div id="content" class="w3-container">
 		<p>Can you do normal tasks without unbearable pain?</p>
 	</div>
+	
 <!--code for yes and no buttons in html and javascript-->
 	<a href="#four" onclick="sprainAdd();" class="w3-btn w3-black"> Yes </a>
 	<a href="#four" onclick="brokenAdd();" class="w3-btn w3-black"> No </a>
@@ -171,10 +179,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
+		
 <!-- code to display the question -->
 	<div id="content" class="w3-container">
 		<p>Does the shape of your finger look deformed?</p>
 	</div>
+		
 <!--code for yes and no buttons in html and javascript-->
 	<a href="#five" onclick="brokenAdd();" class="w3-btn w3-black"> Yes </a>
 	<a href="#five" onclick="sprainAdd();" class="w3-btn w3-black"> No </a>
@@ -184,6 +194,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>results</h1>
+		
 <!-- code to pull information from "results" function at the top of the code, indiciating the percent sprain and percent broken -->
 	</div>
 	
